@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  nginx:
+    image: nginx:1.17-alpine
+    container_name: nginx-loadbalancer
+    ports:
+      - 5555:80
+  
+  node1:
+    image: nginx:1.17-alpine
+    container_name: node1-proxy-reverse
+    ports:
+      - "80"
+
+  node2:
+    image: nginx:1.17-alpine
+    container_name: node2-loadbalancer
+    ports:
+      - "80"
+
+  node3:
+    image: nginx:1.17-alpine
+    container_name: node3-loadbalancer
+    ports:
+      - "80"
+    
