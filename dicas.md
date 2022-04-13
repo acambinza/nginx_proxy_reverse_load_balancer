@@ -49,6 +49,7 @@
 
 ## CODE LOAD BALANCER ##
 
+<code>
 
 upstream nodes {
     server node2;
@@ -70,7 +71,22 @@ server {
 
 }
 
+</code>
 
+# proxy reverse 
+
+<code>
+    
+    server {
+    listen 80;
+    servar_name localhost;
+    
+    location / {
+      proxy_pass http://localhost:3000
+    }
+}
+    
+</code>
 
 
 -- just it -- 
