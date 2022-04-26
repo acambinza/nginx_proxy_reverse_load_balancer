@@ -2,7 +2,23 @@
 
 Nginx aplicando - Proxy Reverse and Load Balancer
 
-## as configurações foram feitas no ficheiro /etc/nginx/nginx.conf
+## as configurações foram testadas no ficheiro : /etc/nginx/nginx.conf
+
+
+# Como usar?
+
+- clone o repo -- https://github.com/acambinza/nginx_proxy_reverse_load_balancer.git
+
+- docker-compose build --parallel
+
+- docker-compose up -d
+
+## APP start in port 80
+
+
+
+
+
 
 
 
@@ -57,7 +73,6 @@ Nginx aplicando - Proxy Reverse and Load Balancer
 
 
 ## CODE LOAD BALANCER ##
-
 
 upstream nodes {
     server node2;
