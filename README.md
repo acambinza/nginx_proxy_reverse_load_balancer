@@ -13,14 +13,13 @@ Nginx aplicando - Proxy Reverse and Load Balancer
 
 - docker-compose up -d
 
-## APP start in port 80
+## APP start in port 5555
 
 
 
 
 
-
-
+### ALGUNS CONCEITOS
 
 
 # O que é nginx?
